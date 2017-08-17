@@ -18,11 +18,11 @@ var articleone={
   date:'sep 5,2017',
   content:` <h2>Personal</h2>
         <p>
-             This is some personal information   about me. 
+             This is some personal information   about me.
         </p>
         <h2>Professional</h2>
         <p>
-             This is a list of my work experiences: 
+             This is a list of my work experiences:
         </p>
         <ol>
          <li> Company A: Worked as some very seriously</li>
@@ -35,11 +35,10 @@ var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
-var htmltemplate=`<!doctype html>
-<html>
+var htmltemplate=`<html>
     <head>
-        <meta name="viewport" content="width=device-width , initial-scale=1">
-      <link href="/ui/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width , initial-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
