@@ -5,8 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleaaone={
-  title:'article-one',
+var articles={  
+  'article-one':{
+        title:'article-one',
   heading:'articleone',
   date:'sep 5,2017',
   content:` <h2>Personal</h2>
@@ -21,6 +22,41 @@ var articleaaone={
          <li> Company A: Worked as some very seriously</li>
          <li> Company B: Worked without seriousness </li>
         </ol>`
+},
+'article-two':{
+  title:'article-two',
+  heading:'articletwo',
+  date:'sep 5,2017',
+  content:` <h2>Personal</h2>
+        <p>
+             This is some personal information   about me.
+        </p>
+        <h2>Professional</h2>
+        <p>
+             This is a list of my work experiences:
+        </p>
+        <ol>
+         <li> Company A: Worked as some very seriously</li>
+         <li> Company B: Worked without seriousness </li>
+        </ol>`
+},
+'article-three':{
+  title:'article-three',
+  heading:'articlethree',
+  date:'sep 5,2017',
+  content:` <h2>Personal</h2>
+        <p>
+             This is some personal information   about me.
+        </p>
+        <h2>Professional</h2>
+        <p>
+             This is a list of my work experiences:
+        </p>
+        <ol>
+         <li> Company A: Worked as some very seriously</li>
+         <li> Company B: Worked without seriousness </li>
+        </ol>`
+}
 };
 
 function createtem(data){
@@ -49,15 +85,11 @@ function createtem(data){
 return htmltemplate;
 }
 
-app.get('/ui/articleone', function (req, res) {
-    res.send(createtem(articleaaone));
+app.get('/ui/:articlename', function (req, res) {
+    var aticlename=req.params.articlename;
+    res.send(createtem(articles[articlename]));
 });
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-app.get('/ui/articletwo', function (req, res) {
+('/ui/articletwo', function (req, res) {
     res.send('SERVED SOON');
 });
 
