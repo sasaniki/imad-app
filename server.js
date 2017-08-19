@@ -27,7 +27,7 @@ var articleone={
         <ol>
          <li> Company A: Worked as some very seriously</li>
          <li> Company B: Worked without seriousness </li>
-        </ol>
+        </ol>`
 };
 
 function createtem(data){
@@ -52,7 +52,7 @@ var htmltemplate=`<html>
 </html>
 `;
 return htmltemplate
-};
+}
 
 app.get('/ui/articleone', function (req, res) {
     res.send(createtem(articleone));
