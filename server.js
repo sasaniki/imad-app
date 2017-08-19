@@ -86,9 +86,9 @@ return htmltemplate;
 }
 
 app.get('/ui/articleone', function (req, res) {
-    //var articlename=req.params.articlename;
-    //res.send(createtem(articles[articlename]));
-    res.send(createtem(articles['article-one']));
+    var articlename=req.params.articlename;
+    res.send(createtem(articles[articlename]));
+    //res.send(createtem(articles['article-one']));
 });
 
 app.get('/', function (req, res) {
