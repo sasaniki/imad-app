@@ -8,9 +8,9 @@ app.use(morgan('combined'));
 var articles={  
   'article-one':{
         title:'article-one',
-  heading:'articleone',
-  date:'sep 5,2017',
-  content:` <h2>Personal</h2>
+        heading:'articleone',
+        date:'sep 5,2017',
+        content:` <h2>Personal</h2>
         <p>
              This is some personal information   about me.
         </p>
@@ -24,10 +24,10 @@ var articles={
         </ol>`
 },
 'article-two':{
-  title:'article-two',
-  heading:'articletwo',
-  date:'sep 5,2017',
-  content:` <h2>Personal</h2>
+        title:'article-two',
+        heading:'articletwo',
+        date:'sep 5,2017',
+        content:` <h2>Personal</h2>
         <p>
              This is some personal information   about me.
         </p>
@@ -41,10 +41,10 @@ var articles={
         </ol>`
 },
 'article-three':{
-  title:'article-three',
-  heading:'articlethree',
-  date:'sep 5,2017',
-  content:` <h2>Personal</h2>
+        title:'article-three',
+        heading:'articlethree',
+        date:'sep 5,2017',
+        content:` <h2>Personal</h2>
         <p>
              This is some personal information   about me.
         </p>
