@@ -86,7 +86,7 @@ return htmltemplate;
 }
 
 app.get('/ui/:articlename', function (req, res) {
-    var aticlename=req.params.articlename;
+    var articlename=req.params.articlename;
     res.send(createtem(articles[articlename]));
 });
 
