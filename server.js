@@ -24,11 +24,11 @@ var articleaaone={
 };
 
 function createtem(data){
-var title=data.title;
-var date=data.date;
-var heading=data.heading;
-var content=data.content;
-var htmltemplate=`<html>
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+    var htmltemplate=`<html>
     <head>
         <meta name="viewport" content="width=device-width , initial-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
