@@ -85,7 +85,7 @@ function createtem(data){
 return htmltemplate;
 }
 
-app.get('/ui/articlenone', function (req, res) {
+app.get('/ui/articleone', function (req, res) {
     //var articlename=req.params.articlename;
     //res.send(createtem(articles[articlename]));
     res.send(createtem(articles[article-one]));
