@@ -89,7 +89,12 @@ app.get('/ui/:articlename', function (req, res) {
     var aticlename=req.params.articlename;
     res.send(createtem(articles[articlename]));
 });
-('/ui/articletwo', function (req, res) {
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/ui/articletwo', function (req, res) {
     res.send('SERVED SOON');
 });
 
