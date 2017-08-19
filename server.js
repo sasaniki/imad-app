@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
+var articleaaone={
   title:'article-one',
   heading:'articleone',
   date:'sep 5,2017',
@@ -48,7 +48,7 @@ return htmltemplate;
 }
 
 app.get('/ui/articleone', function (req, res) {
-    res.send(createtem(articleone));
+    res.send(createtem(articleaaone));
 });
 
 app.get('/', function (req, res) {
