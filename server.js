@@ -85,8 +85,8 @@ function createtem(data){
 return htmltemplate;
 }
 
-app.get('/:articlename', function (req, res) {
-    var articlename=req.params.articlename;
+app.get(':/articleName', function (req, res) {
+    var articlename=req.params.articleName;
     res.send(createtem(articles[articlename]));
     //res.send(createtem(articles['article-one']));
 });
