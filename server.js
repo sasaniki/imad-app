@@ -38,8 +38,10 @@ function createtem(data){
         <div>
             <a href="/">HOME</a>
         </div>
-        <h1>$[heading]</h1>
-        content
+        <h1>
+            $[heading]
+        </h1>
+        ${content}
         </div>
     </body>
 </html>
